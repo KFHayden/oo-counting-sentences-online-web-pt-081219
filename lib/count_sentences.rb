@@ -27,11 +27,6 @@ class String
   end
 
   def count_sentences
-    strings = self.scan(/[\.!?]/).map(&:strip)
-    if strings.length <= 1
-      delete
-    else
-      strings.count
-    end
+    self.scan(/[^\.!?]+[\.!?]/).map(&:strip).count
   end
 end
