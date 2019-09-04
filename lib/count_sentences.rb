@@ -28,5 +28,6 @@ class String
 
   def count_sentences
     self.squeeze('.!?').count('.!?')
+    #squeeze deletes the doubles of each, then count counts the use of each
   end
 end
