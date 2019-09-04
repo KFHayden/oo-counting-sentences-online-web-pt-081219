@@ -32,5 +32,6 @@ class String
       delete
     else
       strings.count
+    end
   end
 end
