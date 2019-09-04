@@ -27,7 +27,10 @@ class String
   end
 
   def count_sentences
-    self.squeeze('.!?').count('.!?')
-    #squeeze deletes the doubles of each, then count counts the use of each
+    #self.squeeze('.!?').count('.!?')
+    #squeeze deletes the doubles of each, then count counts the use of each of these.
+    #this does not seem like it would be effective if a sentence ended with ?! but it works for this test
+    string.scan(/[^\.!?]+]\.!?])
+    
   end
 end
